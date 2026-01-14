@@ -1,10 +1,3 @@
-[build-system]
-requires = ["setuptools"]
-build-backend = "setuptools.build_meta"
-ext-modules = [
-    {name = "vimiv.imutils._c_manipulate", sources = ["c-extension/manipulate.c"]}
-]
-
 [project]
 name = "vimiv"
 version = "0.9.0"
@@ -45,3 +38,14 @@ vimiv = "vimiv.startup:main"
 "Source Code" = "https://github.com/karlch/vimiv-qt"
 "Bug Tracker" = "https://github.com/karlch/vimiv-qt/issues"
 Documentation = "https://karlch.github.io/vimiv-qt/documentation"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+ext-modules = [
+    {name = "vimiv.imutils._c_manipulate", sources = ["c-extension/manipulate.c"]}
+]
+
+
+[tool.setuptools]
+packages = ["vimiv"]
