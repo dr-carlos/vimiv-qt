@@ -47,5 +47,5 @@ ext-modules = [
 ]
 
 
-[tool.setuptools]
-packages = ["vimiv"]
+[tool.setuptools.packages]
+find = {}
